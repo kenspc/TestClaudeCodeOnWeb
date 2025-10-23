@@ -2,6 +2,7 @@
 
 A minimalist and elegant front-end photo search and collection platform that allows users to easily search, save, and manage their favorite photos.
 
+![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -99,20 +100,20 @@ http-server -p 8000
 TestClaudeCodeOnWeb/
 ├── index.html              # Main page - Application entry point
 ├── css/
-│   ├── style.css          # Custom styles
-│   └── responsive.css     # Responsive styles (optional)
+│   └── style.css           # Custom styles with white & light orange theme
 ├── js/
-│   ├── app.js             # Main application logic
-│   ├── storage.js         # Local storage management
-│   ├── search.js          # Search functionality module
-│   └── ui.js              # UI interaction handling
-├── assets/
-│   ├── images/            # Image resources
-│   └── icons/             # Icon resources
-├── .gitignore             # Git ignore configuration
-├── .gitattributes         # Git attributes configuration
-└── README.md              # Project documentation
+│   ├── app.js              # Main application logic
+│   ├── storage.js          # LocalStorage & Cookie management
+│   ├── search.js           # Unsplash API & search functionality
+│   └── ui.js               # UI interaction & rendering
+├── API_SETUP.md            # Unsplash API configuration guide
+├── DEBUGGING.md            # Troubleshooting & debugging guide
+├── README.md               # Project documentation
+├── .gitignore              # Git ignore configuration
+└── .gitattributes          # Git attributes configuration
 ```
+
+**Note**: This project uses CDN for Bootstrap 5 and Bootstrap Icons, so no local assets are required.
 
 ---
 
@@ -238,6 +239,15 @@ Contributions are welcome! Feel free to submit issues and code contributions.
 ---
 
 ## 📝 Changelog
+
+### [1.0.1] - 2025-10-23
+- 🐛 Fixed per-page selection functionality (10, 15, 20, 30 options)
+- ✅ Added validation to enforce Unsplash API limits (max 30 per page)
+- 📊 Added debug logging for API requests and responses
+- 🔍 Removed orientation filter to increase available photos
+- 📚 Added comprehensive debugging guide (DEBUGGING.md)
+- ✨ Enhanced console output for troubleshooting
+- ✅ All features tested and verified working
 
 ### [1.0.0] - 2025-10-23
 - ✨ Initial release with full functionality
