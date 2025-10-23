@@ -41,11 +41,16 @@ const SearchManager = {
       throw new Error('Search query cannot be empty');
     }
 
+    // Unsplash API limits per_page to maximum 30
+    perPage = Math.min(Math.max(perPage, 1), 30);
+
     this.currentQuery = query.trim();
     this.currentPage = page;
     this.perPage = perPage;
 
-    const url = `${this.UNSPLASH_API_URL}/search/photos?query=${encodeURIComponent(query)}&page=${page}&per_page=${perPage}&orientation=landscape`;
+    const url = `${this.UNSPLASH_API_URL}/search/photos?query=${encodeURIComponent(query)}&page=${page}&per_page=${perPage}`;
+
+    console.log(`📡 API Request: ${url}`);
 
     try {
       const response = await fetch(url, {
@@ -62,6 +67,8 @@ const SearchManager = {
 
       this.totalResults = data.total;
       this.totalPages = data.total_pages;
+
+      console.log(`📊 API Response: ${data.results.length} photos returned (requested ${perPage})`);
 
       return {
         results: this.formatSearchResults(data.results),
@@ -103,7 +110,12 @@ const SearchManager = {
       return this.getDemoPhotos();
     }
 
-    const url = `${this.UNSPLASH_API_URL}/photos/random?count=${count}&orientation=landscape`;
+    // Unsplash API limits count to maximum 30
+    count = Math.min(Math.max(count, 1), 30);
+
+    const url = `${this.UNSPLASH_API_URL}/photos/random?count=${count}`;
+
+    console.log(`📡 Random Photos Request: ${url}`);
 
     try {
       const response = await fetch(url, {

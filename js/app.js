@@ -141,8 +141,10 @@ const App = {
     this.isSearching = true;
     UIManager.showLoading(true);
 
+    console.log(`🔍 Searching for "${query}" (page ${page}, ${perPage} per page)...`);
+    console.log(`📋 Selected perPage value: ${perPage}`);
+
     try {
-      console.log(`🔍 Searching for "${query}" (page ${page}, ${perPage} per page)...`);
 
       const results = await SearchManager.searchPhotos(query, page, perPage);
 
