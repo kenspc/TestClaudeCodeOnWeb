@@ -1,6 +1,6 @@
-# 📸 照片搜索与收藏网站
+# 📸 Photo Search & Collection Web App
 
-一个简约优雅的纯前端照片搜索和收藏平台，让用户可以轻松搜索、保存和管理心仪的照片。
+A minimalist and elegant front-end photo search and collection platform that allows users to easily search, save, and manage their favorite photos.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -10,57 +10,57 @@
 
 ---
 
-## ✨ 功能特性
+## ✨ Features
 
-- 🔍 **智能搜索** - 从多个来源搜索海量高质量照片
-- 💾 **本地收藏** - 使用浏览器本地存储保存喜爱的照片URL
-- 👤 **个性化体验** - 首次访问时设置用户名，无需注册登录
-- 🖼️ **收藏管理** - 一目了然地查看所有收藏的照片
-- 🗑️ **快速删除** - 轻松管理和删除不需要的收藏
-- 📱 **响应式设计** - 完美适配手机、平板和桌面设备
-- 🎨 **简约美观** - 专业的UI设计，白色与浅橙色的优雅配色
+- 🔍 **Smart Search** - Search high-quality photos from multiple sources
+- 💾 **Local Collection** - Save favorite photo URLs using browser local storage
+- 👤 **Personalized Experience** - Set username on first visit, no registration required
+- 🖼️ **Collection Management** - View all saved photos at a glance
+- 🗑️ **Quick Delete** - Easily manage and remove unwanted collections
+- 📱 **Responsive Design** - Perfectly adapted for mobile, tablet, and desktop devices
+- 🎨 **Minimalist & Beautiful** - Professional UI design with white and light orange color scheme
 
 ---
 
-## 🛠️ 技术栈
+## 🛠️ Tech Stack
 
-| 技术 | 说明 |
+| Technology | Description |
 |------|------|
-| **HTML5** | 语义化标签，提供良好的页面结构 |
-| **CSS3** | 现代样式特性，实现流畅动画效果 |
-| **Bootstrap 5** | 响应式布局框架，快速构建美观界面 |
-| **JavaScript (ES6+)** | 原生JavaScript，无框架依赖 |
-| **LocalStorage API** | 浏览器本地数据持久化存储 |
-| **Cookie API** | 用户身份识别与会话管理 |
+| **HTML5** | Semantic tags for better page structure |
+| **CSS3** | Modern styling features with smooth animations |
+| **Bootstrap 5** | Responsive layout framework for beautiful UI |
+| **JavaScript (ES6+)** | Vanilla JavaScript with no framework dependencies |
+| **LocalStorage API** | Browser-based persistent data storage |
+| **Cookie API** | User identification and session management |
 
 ---
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 方法一：直接打开（推荐用于快速预览）
+### Method 1: Direct Open (Recommended for Quick Preview)
 
 ```bash
-# 克隆项目
+# Clone the repository
 git clone https://github.com/kenspc/TestClaudeCodeOnWeb.git
 
-# 进入项目目录
+# Navigate to project directory
 cd TestClaudeCodeOnWeb
 
-# 用浏览器直接打开 index.html
+# Open index.html directly in browser
 open index.html  # macOS
 start index.html # Windows
 xdg-open index.html # Linux
 ```
 
-### 方法二：使用本地服务器（推荐用于开发）
+### Method 2: Using Local Server (Recommended for Development)
 
-#### 使用 VS Code Live Server
+#### Using VS Code Live Server
 
-1. 安装 [Live Server 扩展](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-2. 右键点击 `index.html`
-3. 选择 "Open with Live Server"
+1. Install [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+2. Right-click on `index.html`
+3. Select "Open with Live Server"
 
-#### 使用 Python
+#### Using Python
 
 ```bash
 # Python 3
@@ -69,192 +69,192 @@ python -m http.server 8000
 # Python 2
 python -m SimpleHTTPServer 8000
 
-# 然后访问 http://localhost:8000
+# Then visit http://localhost:8000
 ```
 
-#### 使用 Node.js
+#### Using Node.js
 
 ```bash
-# 安装 http-server (首次使用)
+# Install http-server (first time only)
 npm install -g http-server
 
-# 启动服务器
+# Start the server
 http-server -p 8000
 
-# 然后访问 http://localhost:8000
+# Then visit http://localhost:8000
 ```
 
 ---
 
-## 📂 项目结构
+## 📂 Project Structure
 
 ```
 TestClaudeCodeOnWeb/
-├── index.html              # 主页面 - 应用入口
+├── index.html              # Main page - Application entry point
 ├── css/
-│   ├── style.css          # 自定义样式
-│   └── responsive.css     # 响应式样式（可选）
+│   ├── style.css          # Custom styles
+│   └── responsive.css     # Responsive styles (optional)
 ├── js/
-│   ├── app.js             # 主应用逻辑
-│   ├── storage.js         # 本地存储管理
-│   ├── search.js          # 搜索功能模块
-│   └── ui.js              # UI 交互处理
+│   ├── app.js             # Main application logic
+│   ├── storage.js         # Local storage management
+│   ├── search.js          # Search functionality module
+│   └── ui.js              # UI interaction handling
 ├── assets/
-│   ├── images/            # 图片资源
-│   └── icons/             # 图标资源
-├── .gitignore             # Git 忽略文件配置
-├── .gitattributes         # Git 属性配置
-└── README.md              # 项目说明文档
+│   ├── images/            # Image resources
+│   └── icons/             # Icon resources
+├── .gitignore             # Git ignore configuration
+├── .gitattributes         # Git attributes configuration
+└── README.md              # Project documentation
 ```
 
 ---
 
-## 💡 使用说明
+## 💡 User Guide
 
-### 首次使用
+### First Time Setup
 
-1. **设置用户名**
-   - 首次访问时，系统会弹出欢迎对话框
-   - 输入您的名字（将保存在Cookie中）
-   - 之后每次访问都会显示您的名字
+1. **Set Username**
+   - A welcome dialog will appear on first visit
+   - Enter your name (will be saved in Cookie)
+   - Your name will be displayed on each subsequent visit
 
-2. **搜索照片**
-   - 在搜索框中输入关键词（如"夕阳"、"自然"、"城市"）
-   - 点击搜索按钮或按回车键
-   - 浏览搜索结果中的照片
+2. **Search Photos**
+   - Enter keywords in the search box (e.g., "sunset", "nature", "city")
+   - Click the search button or press Enter
+   - Browse through the photo results
 
-3. **收藏照片**
-   - 点击照片上的"收藏"按钮
-   - 照片URL将保存到浏览器本地存储
-   - 可以随时在"我的收藏"页面查看
+3. **Save to Collection**
+   - Click the "Save" button on any photo
+   - Photo URL will be saved to browser's local storage
+   - View saved photos anytime in "My Collection" tab
 
-4. **管理收藏**
-   - 切换到"我的收藏"标签页
-   - 查看所有已收藏的照片
-   - 点击"删除"按钮移除不需要的照片
+4. **Manage Collection**
+   - Switch to "My Collection" tab
+   - View all saved photos
+   - Click "Delete" button to remove unwanted photos
 
-### 数据说明
+### Data Information
 
-- **用户数据存储位置**：浏览器 Cookie 和 LocalStorage
-- **数据持久性**：数据保存在本地，清除浏览器数据后会丢失
-- **隐私保护**：所有数据仅存储在您的设备上，不会上传到服务器
+- **Storage Location**: Browser Cookie and LocalStorage
+- **Data Persistence**: Data is stored locally and will be lost if browser data is cleared
+- **Privacy Protection**: All data is stored only on your device and never uploaded to any server
 
 ---
 
-## 🎨 设计风格
+## 🎨 Design Style
 
-### 颜色方案
+### Color Scheme
 
-| 颜色 | 用途 | 十六进制 |
+| Color | Usage | Hex Code |
 |------|------|----------|
-| 白色 | 主背景色 | `#FFFFFF` |
-| 浅橙色 | 主题色/强调色 | `#FFB347` |
-| 深橙色 | 按钮悬停 | `#FF9A1F` |
-| 深灰色 | 文字颜色 | `#333333` |
-| 浅灰色 | 边框/分割线 | `#E0E0E0` |
+| White | Primary background | `#FFFFFF` |
+| Light Orange | Theme/Accent color | `#FFB347` |
+| Dark Orange | Button hover state | `#FF9A1F` |
+| Dark Gray | Text color | `#333333` |
+| Light Gray | Borders/Dividers | `#E0E0E0` |
 
-### 设计原则
+### Design Principles
 
-- **简约至上** - 去除冗余元素，保留核心功能
-- **用户友好** - 直观的交互设计，降低学习成本
-- **视觉舒适** - 柔和的配色，适中的对比度
-- **响应灵敏** - 快速的页面加载和流畅的动画
+- **Minimalism First** - Remove redundant elements, keep core functionality
+- **User-Friendly** - Intuitive interaction design with low learning curve
+- **Visual Comfort** - Soft color palette with moderate contrast
+- **Responsive** - Fast page loading and smooth animations
 
 ---
 
-## 🌐 浏览器兼容性
+## 🌐 Browser Compatibility
 
-| 浏览器 | 最低版本 | 状态 |
+| Browser | Minimum Version | Status |
 |--------|----------|------|
-| Chrome | 90+ | ✅ 完全支持（推荐） |
-| Firefox | 88+ | ✅ 完全支持 |
-| Safari | 14+ | ✅ 完全支持 |
-| Edge | 90+ | ✅ 完全支持 |
-| Opera | 76+ | ✅ 完全支持 |
-| IE | - | ❌ 不支持 |
+| Chrome | 90+ | ✅ Fully Supported (Recommended) |
+| Firefox | 88+ | ✅ Fully Supported |
+| Safari | 14+ | ✅ Fully Supported |
+| Edge | 90+ | ✅ Fully Supported |
+| Opera | 76+ | ✅ Fully Supported |
+| IE | - | ❌ Not Supported |
 
 ---
 
-## 🗺️ 开发路线图
+## 🗺️ Development Roadmap
 
-### ✅ 第一阶段 - 基础功能（当前）
-- [x] 项目初始化
-- [x] 版本控制配置
-- [x] README 文档编写
-- [ ] 基础页面结构
-- [ ] 用户名输入功能
-- [ ] 照片搜索功能
-- [ ] 收藏管理功能
+### ✅ Phase 1 - Core Features (Current)
+- [x] Project initialization
+- [x] Version control setup
+- [x] README documentation
+- [ ] Basic page structure
+- [ ] Username input functionality
+- [ ] Photo search feature
+- [ ] Collection management
 
-### 🔄 第二阶段 - 功能增强（计划中）
-- [ ] 照片预览放大功能
-- [ ] 为收藏添加备注功能
-- [ ] 搜索历史记录
-- [ ] 收藏分类管理
-- [ ] 导出收藏列表
+### 🔄 Phase 2 - Feature Enhancement (Planned)
+- [ ] Photo preview zoom functionality
+- [ ] Add notes to saved photos
+- [ ] Search history
+- [ ] Collection categorization
+- [ ] Export collection list
 
-### 🚀 第三阶段 - 体验优化（未来）
-- [ ] 暗黑模式支持
-- [ ] 多语言支持（中文/英文）
-- [ ] PWA 支持（离线访问）
-- [ ] 更多主题色选择
-- [ ] 键盘快捷键支持
-
----
-
-## 🤝 贡献指南
-
-欢迎提交问题和贡献代码！
-
-### 如何贡献
-
-1. Fork 本项目
-2. 创建您的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启一个 Pull Request
-
-### 代码规范
-
-- 使用 2 空格缩进
-- 遵循 ESLint 规则
-- 编写清晰的注释
-- 保持代码简洁易读
+### 🚀 Phase 3 - Experience Optimization (Future)
+- [ ] Dark mode support
+- [ ] Multi-language support (Chinese/English)
+- [ ] PWA support (offline access)
+- [ ] Multiple theme color options
+- [ ] Keyboard shortcuts
 
 ---
 
-## 📝 更新日志
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit issues and code contributions.
+
+### How to Contribute
+
+1. Fork this repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### Code Standards
+
+- Use 2 spaces for indentation
+- Follow ESLint rules
+- Write clear comments
+- Keep code clean and readable
+
+---
+
+## 📝 Changelog
 
 ### [0.1.0] - 2025-10-23
-- 项目初始化
-- 添加版本控制文件 (.gitignore, .gitattributes)
-- 创建项目 README 文档
+- Project initialization
+- Added version control files (.gitignore, .gitattributes)
+- Created comprehensive README documentation
 
 ---
 
-## 📄 许可证
+## 📄 License
 
-本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
-
----
-
-## 👨‍💻 作者
-
-- **Your Name** - *Initial work*
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ---
 
-## 🙏 致谢
+## 👨‍💻 Author
 
-- [Bootstrap](https://getbootstrap.com/) - 优秀的前端框架
-- [Unsplash](https://unsplash.com/) - 高质量的免费图片资源
-- [Font Awesome](https://fontawesome.com/) - 丰富的图标库
+- **kenspc** - *Initial work*
+
+---
+
+## 🙏 Acknowledgments
+
+- [Bootstrap](https://getbootstrap.com/) - Excellent front-end framework
+- [Unsplash](https://unsplash.com/) - High-quality free photo resources
+- [Font Awesome](https://fontawesome.com/) - Comprehensive icon library
 
 ---
 
 <div align="center">
 
-**如果这个项目对您有帮助，请给一个 ⭐️ Star 支持一下！**
+**If this project helps you, please give it a ⭐️ Star!**
 
 Made with ❤️ by Claude Code
 
