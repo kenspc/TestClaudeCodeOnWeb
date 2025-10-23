@@ -37,6 +37,13 @@ A minimalist and elegant front-end photo search and collection platform that all
 
 ## 🚀 Quick Start
 
+### Prerequisites
+
+**Optional: Unsplash API Key** (for photo search functionality)
+- The app works without an API key (demo mode + manual URL input)
+- For full search functionality, get a free API key from [Unsplash Developers](https://unsplash.com/developers)
+- See [API_SETUP.md](API_SETUP.md) for detailed setup instructions
+
 ### Method 1: Direct Open (Recommended for Quick Preview)
 
 ```bash
@@ -177,21 +184,28 @@ TestClaudeCodeOnWeb/
 
 ## 🗺️ Development Roadmap
 
-### ✅ Phase 1 - Core Features (Current)
+### ✅ Phase 1 - Core Features (Completed)
 - [x] Project initialization
 - [x] Version control setup
 - [x] README documentation
-- [ ] Basic page structure
-- [ ] Username input functionality
-- [ ] Photo search feature
-- [ ] Collection management
+- [x] Basic page structure with Bootstrap 5
+- [x] Username input functionality (Cookie-based)
+- [x] Photo search feature (Unsplash API)
+- [x] Manual photo URL input
+- [x] Collection management (LocalStorage)
+- [x] Photo preview zoom functionality
+- [x] Photo download functionality
+- [x] Pagination for search results
+- [x] Responsive design (mobile/tablet/desktop)
+- [x] Custom styling with white & light orange theme
 
 ### 🔄 Phase 2 - Feature Enhancement (Planned)
-- [ ] Photo preview zoom functionality
-- [ ] Add notes to saved photos
-- [ ] Search history
-- [ ] Collection categorization
-- [ ] Export collection list
+- [ ] Add notes/tags to saved photos
+- [ ] Search history tracking
+- [ ] Collection categorization/folders
+- [ ] Export/import collection (JSON)
+- [ ] Advanced filters (color, orientation, size)
+- [ ] Infinite scroll option
 
 ### 🚀 Phase 3 - Experience Optimization (Future)
 - [ ] Dark mode support
@@ -224,6 +238,19 @@ Contributions are welcome! Feel free to submit issues and code contributions.
 ---
 
 ## 📝 Changelog
+
+### [1.0.0] - 2025-10-23
+- ✨ Initial release with full functionality
+- 🎨 Complete UI implementation with white & light orange theme
+- 🔍 Photo search via Unsplash API
+- 📎 Manual photo URL input support
+- 💾 LocalStorage-based collection management
+- 🍪 Cookie-based user identification
+- 🖼️ Photo preview with modal zoom
+- ⬇️ Photo download functionality
+- 📄 Pagination for search results
+- 📱 Fully responsive design
+- 📚 Comprehensive API setup documentation
 
 ### [0.1.0] - 2025-10-23
 - Project initialization
